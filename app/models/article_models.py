@@ -15,7 +15,7 @@ class Article:
 
 class ArticleReview:
 
-    all_reviews = []
+    articles_reviews = []
 
     def __init__(self,title,urlToImage,review):
         self.title = title
@@ -23,21 +23,21 @@ class ArticleReview:
         self.review = review
 
 
-    def save_review(self):
-        ArticleReview.all_reviews.append(self)
+    def save_artcles_review(self):
+        ArticleReview.articles_reviews.append(self)
 
 
     @classmethod
-    def clear_reviews(cls):
-        ArticleReview.all_reviews.clear()
+    def clear_articles_reviews(cls):
+        ArticleReview.articles_reviews.clear()
 
     @classmethod
-    def get_reviews(cls,title):
+    def get_articles_reviews(cls,title):
 
-        response = []
+        article_results = []
 
-        for review in cls.all_reviews:
+        for review in cls.articles_reviews:
             if review.title== title:
-                response.append(review)
+                article_results.append(review)
 
-        return response
+        return article_results

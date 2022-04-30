@@ -1,7 +1,8 @@
 import urllib.request,json
 from .models import Articles,Sources
 import os
-# import requests
+import requests
+
 
 api_key = None
 s_url = None
@@ -9,7 +10,7 @@ art_url = None
 
 def configure_request(app):
     global api_key,s_url,art_url
-    api_key = app.config['API_KEY']
+    api_key = app.config['NEWS_API_KEY']
     articles_url = app.config['SOURCE_ARTICLES_URL']
     s_url = app.config['NEWS_API_BASE_URL']
     art_url = app.config['NEWS_ARTICLES_APL_URL']
@@ -114,11 +115,11 @@ def search_articles(article_name):
         search_data = url.read()
         search_response = json.loads(search_data)
 
-        search_results = None
+        search_outcome= None
 
         if search_response['articles']:
             all_search_results = search_response['articles']
-            search_outcome = process_search(all_search_results)
+            search_outcome = search_articles(all_search_results)
     return search_outcome 
 
 

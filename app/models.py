@@ -1,4 +1,4 @@
-class Article:
+class Articles:
     '''
     Article class to define Class Objects
     '''

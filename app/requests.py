@@ -17,11 +17,11 @@ def configure_request(app):
     art_url = app.config['NEWS_ARTICLES_APL_URL']
     
 
-def get_sources(category):
+def get_sources(api_key):
     """
     function that gets response from the api call
     """    
-    sources_url = s_url.format(category,api_key)
+    sources_url = s_url.format(api_key)
 
     with urllib.request.urlopen(sources_url) as url:
         sources_data = url.read()

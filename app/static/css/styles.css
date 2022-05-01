@@ -1,5 +1,29 @@
+
+
 .nav li{
     display: inline-block;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 50px;
+    font-size: 30px;
+    
+}
+
+.nav li input{
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+.nav li button{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.nav li button:hover{
+    color: green;
 }

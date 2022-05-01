@@ -25,5 +25,36 @@
 }
 
 .nav li button:hover{
-    color: green;
+    background-color: green;
+}
+
+.source{
+    color:rgb(24, 24, 71);
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(65, 111, 96); */
+    background: linear-gradient(180deg, rgba(185, 105, 31, 0.66) 0%, rgba(6, 43, 172, 0.429) 100%);
+    border-radius: 5px;
+}
+
+.body button{
+    background-color:red;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.boby button:hover{
+    background-color: green;
+}
+
+/* .flu{
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+} */
+
+#allsources{
+display: flex;
+
 }

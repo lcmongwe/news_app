@@ -9,11 +9,11 @@ def HomePage():
     """
     Views thats renders news sources to the home page
     """
-    # general_news = get_sources('general')
-    # business_news = get_sources("business")
-    # sports_news = get_sources("sports")
-    # return render_template('source.html',general=general_news,business=business_news,sports=sports_news )
-    return render_template('source.html')
+    general_news = get_sources('general')
+    business_news = get_sources("business")
+    sports_news = get_sources("sports")
+    return render_template('source.html',general=general_news,business=business_news,sports=sports_news )
+
 
 @main.route('/articles/<id>')
 def sourceArticles(id):

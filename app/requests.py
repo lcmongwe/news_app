@@ -17,11 +17,11 @@ def configure_request(app):
     art_url = app.config['NEWS_ARTICLES_APL_URL']
     
 
-def get_sources(api_key):
+def get_sources(category):
     """
     function that gets response from the api call
     """    
-    sources_url = s_url.format(api_key)
+    sources_url = s_url.format(category,api_key)
 
     with urllib.request.urlopen(sources_url) as url:
         sources_data = url.read()
@@ -89,6 +89,7 @@ def articles_source(source):
         art_data = url.read()
         response = json.loads(art_data)
         source_articles = None
+        
         if response['articles']:
             source_articles_list = response['articles']
             source_articles = process_articles_source(source_articles_list)

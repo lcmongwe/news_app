@@ -1,7 +1,6 @@
-*{
-    background-image: url(/app/static/images/news2.jpg);
+body {
+  background-image: url(../images/news2.jpg);
 }
-
 
 /* navbar.html */
 
@@ -59,8 +58,8 @@
   justify-content: space-around;
 }
 
-#visit{
-    margin-right: 20 20px;
+#visit {
+  margin-right: 20 20px;
 }
 
 .body button {
@@ -68,7 +67,6 @@
   width: 100px;
   height: 30px;
   border-radius: 5px;
-  
 }
 
 .body button:hover {
@@ -90,7 +88,7 @@
 }
 
 /* SOURCE.HTML */
-.overlay h2{
-    text-align: center;
-    font-size: 60px;
+.overlay h2 {
+  text-align: center;
+  font-size: 60px;
 }

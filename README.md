@@ -2,9 +2,9 @@
 
 News-App
 
-<!-- ## SCREENSHOT
+## SCREENSHOT
 
-![NEWS-APP](pas.png) -->
+![NEWS-APP](/app/static/images/newsscreenshot.png)
 
 ### :bulb: PROJECT DESCRIPTION
 

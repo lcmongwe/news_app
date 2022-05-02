@@ -1,5 +1,11 @@
 
+/* navbar.html */
 
+.nav{
+    position: fixed;
+    z-index: 100px;
+    width: 100%;
+}
 .nav li{
     display: inline-block;
     list-style: none;
@@ -28,31 +34,6 @@
     background-color: green;
 }
 
-.source{
-    color:rgb(24, 24, 71);
-    height: auto;
-    width: 100%;
-    /* background-color: rgb(65, 111, 96); */
-    background: linear-gradient(180deg, rgba(185, 105, 31, 0.66) 0%, rgba(6, 43, 172, 0.429) 100%);
-    border-radius: 5px;
-}
-
-.body button{
-    background-color:red;
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-}
-
-.boby button:hover{
-    background-color: green;
-}
-
-/* .flu{
-    display: flex;
-    justify-content: space-between;
-    align-items:stretch;
-} */
 
 #allsources{
 display: flex;
@@ -62,4 +43,48 @@ display: flex;
 #article{
     height: 800px;
     width: 800px;
+    border-radius: 10px;
+}
+
+
+
+/* macros.html */
+
+.card-columns{
+/* display: inline-block; */
+padding: 20px;
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-items: flex-end;
+
+
+
+}
+
+/* .flu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+} */
+
+.body button{
+    background-color:red;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.body button:hover{
+    background-color: green;
+}
+
+.source{
+    color:rgb(24, 24, 71);
+    height: auto;
+    width: 20%;
+    background: linear-gradient(180deg, rgba(185, 105, 31, 0.66) 0%, rgba(6, 43, 172, 0.429) 100%);
+    border-radius: 5px;
+    
 }

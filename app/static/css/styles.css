@@ -1,90 +1,91 @@
-
 /* navbar.html */
 
-.nav{
-    position: fixed;
-    z-index: 100px;
-    width: 100%;
+.nav {
+  position: fixed;
+  z-index: 100px;
+  width: 100%;
 }
-.nav li{
-    display: inline-block;
-    list-style: none;
-    padding: 0 50px;
-    font-size: 30px;
-    
-}
-
-.nav li input{
-    height: 50px;
-    width: 500px;
-    border-radius: 10px;
-    font-size: 20px;
+.nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 50px;
+  font-size: 30px;
 }
 
-
-
-.nav li button{
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    font-size: 20px;
+.nav li input {
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
-.nav li button:hover{
-    background-color: green;
+.nav li button {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
-
-#allsources{
-display: flex;
-
+.nav li button:hover {
+  background-color: green;
 }
 
-#article{
-    height: 800px;
-    width: 800px;
-    border-radius: 10px;
+#allsources {
+  display: flex;
 }
 
-
+#article {
+  height: 800px;
+  width: 800px;
+  border-radius: 10px;
+}
 
 /* macros.html */
 
-.card-columns{
-/* display: inline-block; */
-padding: 20px;
-display: flex;
-justify-content: flex-start;
-flex-direction: row;
-align-items: flex-end;
-
-
-
+.card-columns {
+  /* display: inline-block; */
+  padding: 20px;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-/* .flu{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-end;
-} */
-
-.body button{
-    background-color:red;
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
+#visit{
+    margin-right: 20 20px;
 }
 
-.body button:hover{
-    background-color: green;
+.body button {
+  background-color: red;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  
 }
 
-.source{
-    color:rgb(24, 24, 71);
-    height: auto;
-    width: 20%;
-    background: linear-gradient(180deg, rgba(185, 105, 31, 0.66) 0%, rgba(6, 43, 172, 0.429) 100%);
-    border-radius: 5px;
-    
+.body button:hover {
+  background-color: green;
+}
+
+.source {
+  color: rgb(24, 24, 71);
+  height: auto;
+  width: 20%;
+  background: linear-gradient(
+    180deg,
+    rgba(185, 105, 31, 0.66) 0%,
+    rgba(6, 43, 172, 0.429) 100%
+  );
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+/* SOURCE.HTML */
+.overlay h2{
+    text-align: center;
+    font-size: 60px;
 }

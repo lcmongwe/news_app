@@ -89,7 +89,7 @@ def articles_source(source):
         art_data = url.read()
         response = json.loads(art_data)
         source_articles = None
-        
+
         if response['articles']:
             source_articles_list = response['articles']
             source_articles = process_articles_source(source_articles_list)
@@ -121,7 +121,7 @@ def search_articles(article_name):
 
         if search_response['articles']:
             all_search_results = search_response['articles']
-            search_outcome = search_articles(all_search_results)
+            search_outcome = process_new_articles(all_search_results)
     return search_outcome 
 
 

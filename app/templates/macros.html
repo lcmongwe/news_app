@@ -1,8 +1,7 @@
 {% macro display_new_sources(sources_outcome) %}
     <div class="container-fluid flu">
-        <div class="row">
-            <div class="colum-md-4">
-                  <div class="card-columns">
+        
+            <div class="card-columns">
             {% for news in sources_outcome %}
             <div class="card sourcecard source">
                 <div class="card-header" id="sourcename" >
@@ -12,15 +11,15 @@
                     <p class="desc">
                         {{news.description}}
                     </p>
-                    <a href="/articles/{{news.id}}"><button class="btn btn-sm btn-outline-success">Read Articles</button> </a>
+                    <a href="/articles/{{news.id}}"><button class="btn btn-sm btn-outline-success">Read Articles</button> </a><br>
                     <a href="{{news.url}}"><button class="btn btn-sm btn-outline-info" id="visit">Visit {{news.name}}</button></a>
                 </div>
             </div>
             {% endfor %}
         </div>
                 
-            </div>
-        </div>
+            
+        
       
     </div>
 {% endmacro %}
@@ -33,7 +32,7 @@
                     <h4>{{article.title}}</h4>
                 </div>
                 <div class="card-body">
-                    <img src="{{article.urlToImage}}" alt="{{article.title }}" class="card-img">
+                    <img src="{{article.urlToImage}}" alt="{{article.title }}" class="card-img" id="article">
                     <hr>
                     <p class="desc">
                         {{article.description}}

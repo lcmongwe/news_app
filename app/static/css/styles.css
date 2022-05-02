@@ -58,3 +58,8 @@
 display: flex;
 
 }
+
+#article{
+    height: 800px;
+    width: 800px;
+}

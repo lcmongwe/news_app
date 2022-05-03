@@ -22,6 +22,7 @@ This is a simple Flask program that allows a user to read various news from diff
 ### :computer: TECHNOLOGIES USED
 
 - PYTHON
+- HTML
 - CSS
 - BOOTSRAP
 

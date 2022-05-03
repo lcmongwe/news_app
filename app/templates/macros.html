@@ -37,7 +37,7 @@
                     <p class="desc">
                         {{article.description}}
                     </p>
-                    <p disabled>Posted: {{article.publishedAt }} By: {{article.author }} </p>
+                    <p disabled>Posted: {{article.publishedAt | truncate(13) }} By: {{article.author }} </p>
                 </div>
                 <div class="card-footer">
                      <a href="{{article.url}}"><button class="btn btn-sm btn-outline-success">Read More</button></a> 

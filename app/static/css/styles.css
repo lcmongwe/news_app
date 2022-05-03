@@ -16,6 +16,10 @@ body {
   font-size: 30px;
 }
 
+.nav li :hover{
+    color: red;
+}
+
 .nav li input {
   height: 50px;
   width: 500px;
@@ -39,8 +43,8 @@ body {
 }
 
 #article {
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
   border-radius: 10px;
   text-align: center;
 }
@@ -92,6 +96,25 @@ body {
   border-radius: 5px;
   padding: 10px;
   margin: 10px 10px;
+}
+
+.articles-outcome{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#readmore{
+    height: 50px;
+    width: 150px;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+#readmore:hover{
+    background-color: green;
 }
 
 /* SOURCE.HTML */

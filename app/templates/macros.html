@@ -24,7 +24,7 @@
     </div>
 {% endmacro %}
 {% macro display_new_articles(articles_outcome) %}
-<div class="container-fluid">
+<div class="container-fluid articles-outcome">
     <div class="card-columns">
         {% for article in articles_outcome %}
             <div class="card">
@@ -40,7 +40,7 @@
                     <p disabled>Posted: {{article.publishedAt | truncate(13) }} By: {{article.author }} </p>
                 </div>
                 <div class="card-footer">
-                     <a href="{{article.url}}"><button class="btn btn-sm btn-outline-success">Read More</button></a> 
+                     <a href="{{article.url}}"><button class="btn btn-sm btn-outline-success" id="readmore">Read More</button></a> 
                 </div>
             </div>
         {% endfor %}

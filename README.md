@@ -4,7 +4,7 @@ News-App
 
 ## SCREENSHOT
 
-![NEWS-APP](/app/static/images/newsscreenshot.png)
+![NEWS-APP](/app/static/images/screen.png)
 
 ### :bulb: PROJECT DESCRIPTION
 
